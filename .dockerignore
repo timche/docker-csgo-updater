@@ -1,0 +1,8 @@
+.github
+node_modules
+dist
+tests
+.gitignore
+babel.config.js
+LICENSE
+README.md
