@@ -1,0 +1,39 @@
+{
+  "scripts": {
+    "start": "node dist/index.js",
+    "dev": "ts-node-dev src/index.ts",
+    "build": "tsc",
+    "test": "jest"
+  },
+  "dependencies": {
+    "delay": "^4.3.0",
+    "dockerode": "^3.0.2",
+    "pino": "^5.14.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/preset-typescript": "^7.8.3",
+    "@sindresorhus/tsconfig": "^0.6.0",
+    "@types/dockerode": "^2.5.20",
+    "@types/jest": "^25.1.2",
+    "@types/node": "^12.12.14",
+    "@types/pino": "^5.8.13",
+    "babel-jest": "^25.1.0",
+    "husky": "^3.1.0",
+    "jest": "^25.1.0",
+    "prettier": "^1.19.1",
+    "pretty-quick": "^2.0.1",
+    "ts-node-dev": "^1.0.0-pre.44",
+    "typescript": "^3.7.3"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  }
+}
